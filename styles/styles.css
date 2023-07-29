@@ -1,0 +1,145 @@
+body {
+  background-color:#212529;
+  width: auto;
+  font-family: monospace;
+}
+
+.parallax {
+  background-image: url("../styles/assets/img/cover.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+}
+
+#iconImg {
+  width: 10rem;
+  height: 10rem;
+}
+
+#header {
+  width: 100%;
+}
+
+.navContainer{
+  display: inline-block;
+}
+
+#mainDiv {
+  background-color: #212529;
+  height: 100%;
+}
+
+#homeDiv {
+  width: 100%;
+}
+
+#homeDiv h6{
+  color: aliceblue;
+  text-align: center;
+}
+
+.cardDiv {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  width: 14rem;
+  height: fit-content;
+  text-align: center;
+  color: aliceblue;
+
+}
+
+ul {
+  list-style-type: none;  
+  padding: 0%;
+}
+
+.checkBtn {
+  float: right;
+}
+
+.checkInput {
+  width: 20px;
+  height: 20px;
+  
+}
+
+.hide {
+  display: none;
+}
+
+.coinDivImg {
+  width: 4rem;
+}
+
+.infoDiv {
+  animation: fadeIn 2s;
+  width: 75%;
+  border: solid 2px;
+  border-radius: 10%;
+  border-color: rgb(207, 202, 207);
+  margin: auto;
+  margin-top:1rem ;
+}
+
+#spinnerDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  opacity: 100%;
+}
+
+.blur {
+  opacity: 30%;
+}
+
+#aboutDiv {
+  text-align: center;
+  color: aliceblue;
+}
+
+#aboutDiv img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.popupImg{
+  width: 2rem;
+}
+
+#chartContainer{
+  height: 370px
+}
+
+
+#chartContainer2{
+  height: 370px
+}
+
+.myModal {
+  color: aliceblue;
+  background-color: #031324;
+}
+
+#liveReportsDiv {
+  color: aliceblue;
+  text-align: center;
+}
+
+#liveReportsDiv img {
+  border-radius: 50%;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#128184;shmoney</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="styles/assats/img/money-bag-icon.png"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- my CSS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="mt-4">
+    <div id="spinnerDiv">
+      <div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <div class="parallax" id="parallax"></div>
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content myModal">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">
+              Oops...<br />
+              You can not pick more then 5 coins at a time.
+            </h5>
+          </div>
+          <div id="coinNumber6Div" class="modal-body"></div>
+          <div class="modal-body">
+            you can remove a coin from the list to add it, <br />
+            witch coin would you like to remove?
+            <div id="coinsCheckList"></div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              id="popupCloseBtn"
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              Cancel
+            </button>
+            <button
+              id="popupSaveBtn"
+              onclick="doIt()"
+              type="button"
+              class="btn btn-outline-primary"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="navbar">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <ul class="navbar-expand me-auto mb-2 mb-lg-0">
+            <li class="navContainer m-1">
+              <a
+                id="homeLink"
+                class="nav-link btn btn-outline-secondary"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="navContainer m-1">
+              <a id="liveReportsLink" class="nav-link btn btn-outline-secondary"
+                >Live Reports</a
+              >
+            </li>
+            <li class="navContainer m-1">
+              <a id="aboutLink" class="nav-link btn btn-outline-secondary"
+                >About</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              id="searchInput"
+              class="form-control me-2"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        <!-- </div> -->
+      </nav>
+    </div>
+    <div id="mainDiv">
+      <!-- home div -->
+      <div id="homeDiv" class="row">
+        <h6>- Click 'see more' to get currencies current price in USD, EUR, ILS.</h6>
+        <h6>- Click switch to add currencies to live reports.</h6>
+        <br><br>
+      </div>
+      <!-- live reports div -->
+      <div id="liveReportsDiv">
+        <p>
+        <img src="styles/assets/img/no_coins_selected.gif">
+        <br> NO COINS SELECTED.
+        <br> Please select currencies to display the graph.</p> 
+
+        <div id="chartContainer" ></div>
+      </div>
+      <!-- about div -->
+      <div id="aboutDiv">
+        <img src="styles/assets/img/about_cat.avif" alt="oops..." />
+        <h3>Nice of you to ask </h3>
+        <p>
+          My name is Eden and I'm a full-stack web dev student. <br />
+          I present to you my second project using AJAX API and jQuery.
+          <br />
+          I hope you like it. <br />
+          <br />
+          And always remember - <br />
+          The best things in life are free *plus shipping and handling*
+        </p>
+      </div>
+    </div>
+    <div class="parallax" id="parallax"></div>
+
+    <!-- bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!-- my JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
